@@ -10,16 +10,46 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="title">SketchPad</div>
-      <div class="mode">Mode: Coloring</div>
       <div class="content">
-        <div class="board"></div>
+        <div class="choose-color">
+          <div class="color-divs1">
+            <div class="pen-color"></div>
+            <span>Pen Color</span>
+          </div>
+          <div class="color-divs2">
+            <div class="background-color"></div>
+            <span>Background Color</span>
+          </div>
+        </div>
+
         <div class="buttons">
-          <button onclick="changeColor('black')">Black</button>
-          <button onclick="changeColor('gray')">Gray</button>
-          <button onclick="changeColor('white')">Eraser</button>
-          <button onclick="changeColor('random')">Rainbow</button>
-          <button onclick="boardReset()">Reset</button>
+          <button
+            id="btn-color"
+            class="btn-black"
+            onclick="changeColor('black')"
+          >
+            Black
+          </button>
+          <button id="btn-color" class="btn-gray" onclick="changeColor('gray')">
+            Gray
+          </button>
+          <button
+            id="btn-color"
+            class="btn-white"
+            onclick="changeColor('white')"
+          >
+            Eraser
+          </button>
+          <button
+            id="btn-color"
+            class="btn-rainbow"
+            onclick="changeColor('random')"
+          >
+            Rainbow
+          </button>
+          <button id="btn-color" class="btn-reset" onclick="boardReset()">
+            Reset
+          </button>
         </div>
         <input
           type="text"
@@ -27,7 +57,12 @@
           value="16"
           onchange="makeGrid(this.value)"
         />
-        <button>Set Size</button>
+        <button id="btn-color">Set Size</button>
+      </div>
+      <div class="contentContainer">
+        <div class="title"><h1>SketchPad</h1></div>
+        <div class="mode">Mode: Coloring</div>
+        <div class="board"></div>
       </div>
     </div>
   </body>

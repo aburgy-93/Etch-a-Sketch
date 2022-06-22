@@ -1,5 +1,84 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  height: 500px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 99px;
+
+  border: 1px solid black;
+}
+
+/* div {
+  border: 1px red solid;
+} */
+
+.choose-color {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.color-divs1,
+.color-divs2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pen-color,
+.background-color {
+  height: 30px;
+  width: 60px;
+
+  border: 1px solid rgb(0, 225, 255);
+  color: rgb(0, 225, 255);
+}
+
+p {
+  font-size: 15px;
+}
+
+.buttons {
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+#btn-color {
+  width: 200px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid rgb(0, 225, 255);
+  color: rgb(0, 225, 255);
+}
+
 .board {
   height: 500px;
   width: 500px;
   display: grid;
+  border: 1px solid black;
 }
