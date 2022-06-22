@@ -11,19 +11,21 @@
   <body>
     <div class="flex-container">
       <div class="title">SketchPad</div>
+      <div class="mode">Mode: Coloring</div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons">
-          <button>Black</button>
-          <button>Gray</button>
-          <button>Rainbow</button>
-          <button>Reset</button>
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('gray')">Gray</button>
+          <button onclick="changeColor('white')">Eraser</button>
+          <button onclick="changeColor('random')">Rainbow</button>
+          <button onclick="boardReset()">Reset</button>
         </div>
         <input
           type="text"
           placeholder="Size of Board"
           value="16"
-          onchange="populateBoard(this.value)"
+          onchange="makeGrid(this.value)"
         />
         <button>Set Size</button>
       </div>
