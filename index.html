@@ -13,11 +13,23 @@
       <div class="content">
         <div class="choose-color">
           <div class="color-divs1">
-            <div class="pen-color"></div>
+            <input
+              type="color"
+              class="pen-color"
+              name="Pen Color"
+              value=" #000000 "
+              onchange="changeColor(this.value)"
+            />
             <span>Pen Color</span>
           </div>
           <div class="color-divs2">
-            <div class="background-color"></div>
+            <input
+              type="color"
+              class="background-color"
+              name="Pen Color"
+              value=" #000000 "
+              onchange="changeBackgroundColor(this.value)"
+            />
             <span>Background Color</span>
           </div>
         </div>
@@ -52,12 +64,12 @@
           </button>
         </div>
         <input
-          type="text"
+          type="range"
           placeholder="Size of Board"
           value="16"
           onchange="makeGrid(this.value)"
         />
-        <button id="btn-color">Set Size</button>
+        <button class="grid-size" id="btn-color">Select Size</button>
       </div>
       <div class="contentContainer">
         <div class="title"><h1>SketchPad</h1></div>

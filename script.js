@@ -16,6 +16,9 @@ function makeGrid(size) {
     board.insertAdjacentElement("beforeend", square);
     square.addEventListener("mouseover", colorSquare);
   }
+
+  let gridSize = document.querySelector(".grid-size");
+  gridSize.textContent = `${size} x ${size}`;
 }
 
 function colorSquare() {
@@ -28,9 +31,18 @@ function colorSquare() {
   }
 }
 
+// function colorBackground() {
+//   this.style.backgroundColor = color;
+// }
+
 function changeColor(choice) {
   color = choice;
 }
+
+// function changeBackgroundColor(choice) {
+//   color = choice;
+// }
+// change the user input and use diff var than color?
 
 function boardReset() {
   let board = document.querySelector(".board");
