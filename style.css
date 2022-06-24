@@ -1,9 +1,19 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 
   gap: 50px;
+  background-color: black;
 }
 
 .contentContainer {
@@ -22,8 +32,9 @@
   flex-direction: column;
 
   margin-top: 99px;
+  background-color: rgb(19, 19, 19);
 
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* div {
@@ -55,6 +66,16 @@
   color: rgb(0, 225, 255);
 }
 
+span,
+.title,
+.mode {
+  color: rgb(0, 225, 255);
+}
+
+.board {
+  background-color: white;
+}
+
 p {
   font-size: 15px;
 }
@@ -82,4 +103,26 @@ p {
   width: 500px;
   display: grid;
   border: 1px solid black;
+}
+
+#btn-color:hover {
+  cursor: pointer;
+  background-color: rgb(34, 34, 34);
+}
+
+#btn-color:active {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
 }

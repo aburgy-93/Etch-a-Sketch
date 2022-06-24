@@ -21,6 +21,11 @@ function makeGrid(size) {
   gridSize.textContent = `${size} x ${size}`;
 }
 
+// Toggle grid
+// function toggleGrid(){
+
+// }
+
 function colorSquare() {
   if (click) {
     if (color === "random") {
